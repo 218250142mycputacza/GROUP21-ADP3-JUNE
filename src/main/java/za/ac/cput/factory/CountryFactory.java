@@ -2,7 +2,7 @@
 // Student number: 218250142
 package za.ac.cput.factory;
 
-import za.ac.cput.entity.Country;
+import za.ac.cput.domain.Country;
 
 public class CountryFactory {
     public static Country createCountry(String id, String name){
