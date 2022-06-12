@@ -21,7 +21,7 @@ public class Student {
     @NotNull
     public String email;
 
-    @Embedded private Name name;
+    @Embedded public Name name;
     public Name getName()
     {
         return name;
