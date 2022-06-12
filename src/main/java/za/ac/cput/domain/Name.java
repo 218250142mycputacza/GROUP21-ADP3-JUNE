@@ -6,11 +6,11 @@ import javax.persistence.Embeddable;
 @Embeddable
 public class Name {
 
-    private String firstName;
-    private String middleName;
-    private String lastName;
+    public String firstName;
+    public String middleName;
+    public String lastName;
 
-    private Name (Builder builder){
+    public Name (Builder builder){
         this.firstName = builder.firstName;
         this.middleName = builder.middleName;
         this.lastName = builder.lastName;
@@ -44,9 +44,9 @@ public class Name {
 
     public static class Builder{
 
-        private String firstName;
-        private String middleName;
-        private String lastName;
+        public String firstName;
+        public String middleName;
+        public String lastName;
 
         public Builder setFirstName(String firstName) {
             this.firstName = firstName;
