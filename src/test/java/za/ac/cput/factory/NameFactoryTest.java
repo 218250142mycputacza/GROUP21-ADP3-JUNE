@@ -1,6 +1,6 @@
-package ac.za.cput.factory;
+package za.ac.cput.factory;
 
-import ac.za.cput.domain.Name;
+import za.ac.cput.domain.Name;
 import org.junit.jupiter.api.Test;
 //import util.Help;
 
