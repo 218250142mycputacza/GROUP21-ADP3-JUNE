@@ -7,12 +7,12 @@ import javax.persistence.Embeddable;
 
 @Embeddable
 public class Country {
-    private String id;
-    private String name;
+    public String id;
+    public String name;
 
-    private Country(){}
+    public Country(){}
 
-    private Country (Builder builder){
+    public Country (Builder builder){
         this.id = builder.id;
         this.name = builder.name;
     }
@@ -34,8 +34,8 @@ public class Country {
                 '}';
     }
 public static class Builder{
-private String id;
-private String name;
+public String id;
+public String name;
 
     public Builder setId(String id) {
         this.id = id;
