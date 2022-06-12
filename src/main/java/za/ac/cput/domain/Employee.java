@@ -18,7 +18,7 @@ public class Employee implements Serializable {
     @NotNull
     public String email;
     @Embedded
-    private Name name;
+    public Name name;
     public Name getName()
     {
         return name;
