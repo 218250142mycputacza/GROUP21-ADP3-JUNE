@@ -1,4 +1,4 @@
-package domain;
+package ac.za.cput.domain;
 import javax.persistence.Embeddable;
 
 /* Zelino Pestana 218325991 */
