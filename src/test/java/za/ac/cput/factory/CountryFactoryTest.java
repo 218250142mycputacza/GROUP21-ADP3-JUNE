@@ -3,7 +3,7 @@
 package za.ac.cput.factory;
 
 import org.junit.jupiter.api.Test;
-import za.ac.cput.entity.Country;
+import za.ac.cput.domain.Country;
 
 import static org.junit.jupiter.api.Assertions.*;
 

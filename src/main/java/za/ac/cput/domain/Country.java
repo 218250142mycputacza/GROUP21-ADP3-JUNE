@@ -1,6 +1,6 @@
 //Name: Levi Williams
 // Student number: 218250142
-package za.ac.cput.entity;
+package za.ac.cput.domain;
 
 
 import javax.persistence.Embeddable;
