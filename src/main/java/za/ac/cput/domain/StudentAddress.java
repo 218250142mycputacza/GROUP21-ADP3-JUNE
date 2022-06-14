@@ -5,17 +5,18 @@ Nawaaz Amien
 219099839
  */
 
+import com.sun.istack.NotNull;
+
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.IdClass;
-import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Objects;
 
 @Entity
 @IdClass(StudentAddress.StudentAddressId.class)
-public class StudentAddress implements Serializable{
+public class StudentAddress implements Serializable {
 
     @NotNull
     @Id
@@ -34,7 +35,6 @@ public class StudentAddress implements Serializable{
         this.studentId=builder.studentId;
     }
     public String getStudentId(){return studentId;}
-
 
     public static class Builder
     {
@@ -75,5 +75,6 @@ public class StudentAddress implements Serializable{
     {
         return "StudentAddress{" +
                 "studentId='" + studentId + '\'' + '}';
+    }
 }
-}
+

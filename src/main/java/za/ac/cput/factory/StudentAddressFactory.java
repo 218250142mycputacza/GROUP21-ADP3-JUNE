@@ -19,6 +19,5 @@ public class StudentAddressFactory {
     {
         return new StudentAddress.StudentAddressId(studentAddress.getStudentId());
     }
-
-
 }
+
