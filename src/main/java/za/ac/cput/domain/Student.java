@@ -5,15 +5,17 @@ Nawaaz Amien
 219099839
  */
 
+import com.sun.istack.NotNull;
+
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.validation.constraints.NotNull;
+import javax.persistence.IdClass;
 import java.io.Serializable;
 import java.util.Objects;
 
-
 @Entity
+@IdClass(Student.StudentId.class)
 public class Student {
     @NotNull
     @Id
@@ -21,7 +23,8 @@ public class Student {
     @NotNull
     public String email;
 
-    @Embedded public Name name;
+    @Embedded
+    public Name name;
     public Name getName()
     {
         return name;
@@ -61,7 +64,9 @@ public class Student {
             this.email=student.email;
             return this;
         }
-        public Student build(){ return new Student(this);}}
+        public Student build(){ return new Student(this);
+        }
+    }
 
     public static class StudentId implements Serializable
     {
@@ -89,3 +94,4 @@ public class Student {
                 ", email='" + email + '\'' + '}';
     }
 }
+
