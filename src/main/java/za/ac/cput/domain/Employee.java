@@ -32,7 +32,7 @@ public class Employee implements Serializable {
 
     }
 
-    public String getStaffid() {
+    public String getStaffId() {
         return staffId;
     }
     public String getEmail() {
