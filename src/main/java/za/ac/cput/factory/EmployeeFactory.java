@@ -17,7 +17,7 @@ public class EmployeeFactory {
     }
     public static Employee.EmployeeId buildId(Employee employee)
     {
-        return new Employee.EmployeeId(employee.getStaffid());
+        return new Employee.EmployeeId(employee.getStaffId());
     }
 
     public static Employee createEmployee(String email,String staffId) {
