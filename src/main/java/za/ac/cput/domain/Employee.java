@@ -18,14 +18,14 @@ public class Employee implements Serializable {
     @NotNull
     public String email;
     @Embedded
-    public Name name;
+    private Name name;
     public Name getName()
     {
         return name;
     }
 
     protected Employee(){}
-    public Employee(Builder builder)
+    private Employee(Builder builder)
     {
         this.staffId=builder.staffId;
         this.email=builder.email;

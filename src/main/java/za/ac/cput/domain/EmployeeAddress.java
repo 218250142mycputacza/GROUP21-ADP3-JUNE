@@ -15,13 +15,13 @@ public class EmployeeAddress implements Serializable {
     @Id
     public String staffId;
 
-    @Embedded public Address address;
+    @Embedded private Address address;
     public Address getAddress()
     {
         return address;
     }
     protected EmployeeAddress(){}
-    public EmployeeAddress(Builder builder)
+    private EmployeeAddress(Builder builder)
     {
         this.staffId=builder.staffId;
     }
