@@ -21,7 +21,7 @@ public class City implements Serializable {
 
 
     @Embedded
-    public Country country;
+   private Country country;
 
     public Country getCountry() {
         return country;
@@ -30,7 +30,7 @@ public class City implements Serializable {
     }
 
 
-    public City(Builder builder) {
+   private City(Builder builder) {
         this.id = builder.id;
         this.name = builder.name;
     }
