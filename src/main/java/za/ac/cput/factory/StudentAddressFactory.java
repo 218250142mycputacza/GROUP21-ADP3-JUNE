@@ -11,7 +11,7 @@ public class StudentAddressFactory {
     public static StudentAddress build(String studentId)
     {
         if(studentId==null || studentId.isEmpty())
-            throw new IllegalArgumentException("StudentId is required!");
+            throw new IllegalArgumentException("Student Id is required!");
         return new StudentAddress.Builder().studentId(studentId)
                 .build();
     }

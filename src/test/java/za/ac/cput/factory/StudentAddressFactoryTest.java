@@ -15,7 +15,7 @@ class StudentAddressFactoryTest {
     public void buildWithSuccess()
     {
         StudentAddress studentAddress=StudentAddressFactory
-                .build("Test-Id");
+                .build("Student-Id");
         System.out.println(studentAddress);
         assertNotNull(studentAddress);
     }

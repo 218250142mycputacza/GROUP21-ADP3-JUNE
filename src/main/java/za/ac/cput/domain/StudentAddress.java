@@ -23,14 +23,14 @@ public class StudentAddress implements Serializable {
     public String studentId;
 
     @Embedded
-    public Address address;
+    private Address address;
     public Address getAddress()
     {
         return address;
     }
 
     protected StudentAddress(){}
-    public StudentAddress(Builder builder)
+    private StudentAddress(Builder builder)
     {
         this.studentId=builder.studentId;
     }
