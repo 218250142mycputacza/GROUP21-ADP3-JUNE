@@ -24,14 +24,14 @@ public class Student {
     public String email;
 
     @Embedded
-    public Name name;
+    private Name name;
     public Name getName()
     {
         return name;
     }
 
     protected Student(){}
-    public Student(Builder builder)
+    private Student(Builder builder)
     {
         this.studentId=builder.studentId;
         this.email=builder.email;
