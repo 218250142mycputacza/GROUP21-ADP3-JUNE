@@ -16,11 +16,11 @@ import java.util.Objects;
 public class Name implements Serializable {
     @NotNull
     @Id
-    public String firstName;
+    private String firstName;
     @NotNull public String lastName,middleName;
 
     protected Name(){}
-    public Name(Builder builder)
+    private Name(Builder builder)
     {
         this.firstName=builder.firstName;
         this.lastName=builder.lastName;
