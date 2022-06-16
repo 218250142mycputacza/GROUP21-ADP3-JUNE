@@ -19,12 +19,12 @@ public class Address implements Serializable {
 
     @NotNull public String postalCode;
     @Embedded
-    public City city;
+    private City city;
     public City getCity(){return city;}
 
 
     protected Address(){}
-    public Address(Builder builder)
+    private Address(Builder builder)
     {
         this.unitNumber=builder.unitNumber;
         this.complexName=builder.complexName;
