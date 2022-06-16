@@ -21,7 +21,7 @@ public class Country {
     public String countryName;
 
     protected Country(){}
-    public Country(Builder builder)
+    private Country(Builder builder)
     {
         this.countryName=builder.countryName;
         this.countryId=builder.countryId;
