@@ -7,7 +7,7 @@ package za.ac.cput.service.service;
  */
 import za.ac.cput.domain.City;
 import java.util.List;
-
+import za.ac.cput.service.IService;
 public interface CityService extends IService<City,City.CityId> {
     List<City> findAll();
     //void deleteById(String id);
