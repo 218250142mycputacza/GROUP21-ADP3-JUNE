@@ -7,6 +7,7 @@ package za.ac.cput.service.service;
 import za.ac.cput.domain.Address;
 import java.util.List;
 import java.util.Optional;
+import za.ac.cput.service.IService;
 
 public interface AddressService extends IService<Address,Address.AddressId> {
     List<Address> findAll();
