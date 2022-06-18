@@ -5,6 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
+import za.ac.cput.api.CountryAPI;
 import za.ac.cput.domain.Country;
 import za.ac.cput.service.service.CountryService;
 
@@ -15,17 +16,17 @@ import java.util.List;
 @RequestMapping("schoolmanagement/country/")
 @Slf4j
 public class CountryController {
-    private final CountryService countryService;
+    private final CountryAPI api;
 
-    @Autowired public CountryController(CountryService countryService)
+    @Autowired public CountryController(CountryAPI api)
     {
-        this.countryService=countryService;
+        this.api=api;
     }
     @PostMapping("save")
     public ResponseEntity<Country> save(@Valid @RequestBody Country country)
     {
         //log.info("save request:{}",country);
-        Country save=countryService.save(country);
+        Country save=this.api.save(country);
         return ResponseEntity.ok(save);
     }}
 
