@@ -1,5 +1,5 @@
 package za.ac.cput.domain;
-
+import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.IdClass;
